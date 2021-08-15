@@ -111,3 +111,19 @@
     background: linear-gradient(#FF5F7F, #d80808);
     margin: 2% auto;
 }
+.Pickle {
+  width: 80%;
+  height: 3%;
+  background: radial-gradient(green 5%, transparent 6%), radial-gradient(rgba(255,255,255,0.5) 5%, transparent 6%), radial-gradient(rgba(255,255,255,0.2) 5%, transparent 6%), radial-gradient(rgba(255,255,255,0.4) 5%, transparent 6%), radial-gradient(rgba(255,255,255,0.7) 5%, transparent 6%), green;
+  background-position: 0 5px, 20px 30px, 50px 20px, 10px 10px, -8px 20px;
+  background-size: 30px 30px;
+  border: 9px solid dark-green;
+  border-top-left-radius: 100px 100%;
+  border-top-right-radius: 70px;
+  border-bottom-left-radius: 100px 100%;
+  border-bottom-right-radius: 70px;
+  z-index: 1;
+  margin: 2% auto;
+
+  
+}
