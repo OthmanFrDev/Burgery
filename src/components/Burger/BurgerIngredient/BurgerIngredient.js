@@ -1,5 +1,6 @@
 import React from 'react'
 import classes from './BurgerIngredient.module.css'
+import Auxx from '../../../hoc/Auxx'
 import PropTypes from "prop-types"
 const BurgerIngredient = (props) => {
     let ingredient = null;
@@ -21,7 +22,8 @@ const BurgerIngredient = (props) => {
         case "salad":
             ingredient = <div className={classes.Salad}></div>; break;
         case "pickle":
-            ingredient = <div className={classes.Pickle}></div>; break;
+            ingredient = <Auxx><div className={classes.Pickle}></div><div className={classes.Pickle}></div><div className={classes.Pickle}></div><div className={classes.Pickle}></div><br></br></Auxx>; 
+            break;
         default:
             ingredient = null;
     }
