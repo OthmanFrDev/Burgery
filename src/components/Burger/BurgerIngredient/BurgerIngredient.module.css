@@ -124,6 +124,7 @@
   border-bottom-left-radius: 100px 100%;
   border-bottom-right-radius: 70px;
   z-index: 1;
+  justify-content: center;
   margin: 2% auto;
 
   
