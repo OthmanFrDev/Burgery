@@ -1,6 +1,6 @@
 import React from 'react'
 import classes from './Modal.module.css'
-import Auxx from '../../../hoc/Auxx';
+import Auxx from '../../../hoc/Auxx/Auxx';
 import Backdrop from '../Backdrop/Backdrop';
 const modal = (props) => {
     return (
@@ -18,4 +18,4 @@ const modal = (props) => {
     );
 }
 
-export default modal;
+export default React.memo(modal);
