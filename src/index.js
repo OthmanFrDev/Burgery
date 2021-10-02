@@ -2,11 +2,17 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
-import {BrowserRouter} from 'react-router-dom'
-const app=(
-  <BrowserRouter>
+import { Provider } from 'react-redux'
+import { createStore } from "redux"
+import { BrowserRouter } from 'react-router-dom'
+import reducer from './store/reducer';
+const store = createStore(reducer);
+const app = (
+  <Provider store={store}>
+    <BrowserRouter>
       <App />
-  </BrowserRouter>
+    </BrowserRouter>
+  </Provider>
 )
 ReactDOM.render(
   <React.StrictMode>
